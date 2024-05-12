@@ -20,8 +20,8 @@ COPY ./nodemon.json /src/nodemon.json
 # Set environment to "development" by default
 ENV NODE_ENV development
 
-# Allows port 3000 to be publicly available
-EXPOSE 3000
+# Allows port 8081 to be publicly available
+EXPOSE 8081
 
 # The command uses nodemon to run the application
 CMD ["node", "node_modules/.bin/nodemon", "-L", "bin/www"]
